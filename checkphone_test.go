@@ -19,7 +19,7 @@ func TestCheckPhone(t *testing.T) {
 		t.Logf("\tTest 0:\tWhen adding a list of wrong Iran Phone numbers.")
 		{
 			for _, p := range list {
-				if checkphone.CheckIranPhone(p) != false {
+				if checkphone.Iran(p) != false {
 					t.Logf("\t%s\tTest 0:\tShould not be able to return true for %s items.", failed, p)
 				}
 			}
