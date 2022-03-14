@@ -23,11 +23,11 @@ import (
 func main() {
 	input := "+989372222222"
 
-	fmt.Println(checkphone.CheckIranPhone(input)) // true
+	fmt.Println(checkphone.Iran(input)) // true
 
 	input2 := "+9893722222222"
 
-	fmt.Println(checkphone.CheckIranPhone(input2)) // false
+	fmt.Println(checkphone.Iran(input2)) // false
 
 }
 ```
