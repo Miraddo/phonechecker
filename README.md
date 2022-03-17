@@ -5,7 +5,7 @@ this is a simple package just to check phone number input to be sure that the nu
 ## Installation
 
 ```
-go get github.com/miraddo/checkphone
+go get github.com/miraddo/phonechecker
 ```
 
 
@@ -17,17 +17,17 @@ package main
 import (
 	"fmt"
 
-	"github.com/miraddo/checkphone"
+	"github.com/miraddo/phonechecker"
 )
 
 func main() {
 	input := "+989372222222"
 
-	fmt.Println(checkphone.Iran(input)) // true
+	fmt.Println(phonechecker.Iran(input)) // true
 
 	input2 := "+9893722222222"
 
-	fmt.Println(checkphone.Iran(input2)) // false
+	fmt.Println(phonechecker.Iran(input2)) // false
 
 }
 ```
